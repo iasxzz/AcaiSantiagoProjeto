@@ -1,144 +1,66 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device=width, initial-scale=1.0">
-    <title>Açaí Santiago</title> <br>
-
+    <title>Formulário de Pedido</title>
     <style>
-h1 {color: (blueviolet; font-size: 50px; font-family: cursive;
-text-align:center;
+        body {
+            background-color: #e0f7fa; /* cor de fundo */
+            /* ou, se quiser uma imagem de fundo: */
+            /* background-image: url('fundo.jpg'); */
+            /* background-size: cover; */
+            font-family: Arial, sans-serif;
+            padding: 20px;
+        }
 
-}
-
-h2 {font-family: Arial, Helvetica, sans-serif;}
-
-.caixa {color: rgb(0, 0, 0); text-align: center;
-    font-family: Arial, Helvetica, sans-serif; 
-   background-color: rgba(117, 6, 89, 0.547);
-
-
-}
-
-body {
-    background-image: url('https://e0.pxfuel.com/wallpapers/945/97/desktop-wallpaper-acai-poke-bowls-breakfast-projeto-acai-acai.jpg');
-   background-size: cover;
-     background-repeat: no-repeat;
-    background-position: center;
-    } 
+        form {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            max-width: 400px;
+            margin: auto;
+            box-shadow: 0 0 10px rgba(0,0,0,0.2);
+        }
+    </style>
 </head>
-
-</style>
-
-
-    
-
-<link rel="stylesheet" href="estilo.css">
-<style>
-
-
-h1 {color: (blueviolet; font-size: 50px; font-family: cursive;
-text-align:center;
-
-}
-
-h2 {font-family: Arial, Helvetica, sans-serif;}
-
-.caixa {color: rgb(0, 0, 0); text-align: center;
-    font-family: Arial, Helvetica, sans-serif; 
-   background-color: rgba(117, 6, 89, 0.547);
-
-
-}
-
-body {
-    background-image: url('acaiiii.png');
-   background-size: cover;
-     background-repeat: no-repeat;
-    background-position: center;
-    } 
-
-
-</style>
-
-
-
-
-
- 
-</head>
- 
-
-
 <body>
-        
+    <form>
+        Email: <input type="email" name="Email"> <br><br>
 
-    
-
-    
-    
-   
-    <h1>Açaí Santiago </h1> 
-        
-
-    
-<div class="caixa">
-    <h2> Faça seu pedido!</h2>
-    <img src="https://imagensempng.com.br/wp-content/uploads/2021/02/24.png" alt="Imagem" height="200" width="200">
-    
-     <form method="GET" action="desculpekkk.html"> 
-    
-
-             Nome: <input type="text" name="nome"><br>
-        Email: <input type="email" name="Email"> <br>
-        Tamanho: <input type="radio" name="tamanho" value="g" checked>1kg
+        Tamanho: 
+        <input type="radio" name="tamanho" value="g" checked>1kg
         <input type="radio" name="tamanho" value="m">700g
-        <input type="radio" name="tamanho" value="p"> 500g
-        <input type="radio" name="tamanho" value="p"> 300g<br>
-           
-            
-            
-            
+        <input type="radio" name="tamanho" value="p">500g
+        <input type="radio" name="tamanho" value="pp">300g
+        <br><br>
 
+        <select name="Sabores"> 
+            <option>Açaí batido com Banana e Guaraná</option>
+            <option>Açaí batido com Morango</option>
+            <option>Açaí + Cupuaçu</option>
+        </select> 
+        <br><br>
 
-<select name="Sabores"> 
-    <option>Açaí batido com Banana e Guaraná</option>
-<option>Açaí batido com Morango</option>
-<option>Açaí + Cupuaçu</option>
+        <input type="checkbox" name="adcionais" value="avelã">Creme de Avelã
+        <input type="checkbox" name="adcionais" value="brigadeiro">Brigadeiro
+        <input type="checkbox" name="adcionais" value="pistache">Creme de Pistache 
+        <br>
+        <input type="checkbox" name="adcionais" value="paçoca">Creme de Paçoca
+        <input type="checkbox" name="adcionais" value="morango">Morango
+        <input type="checkbox" name="adcionais" value="uva">Uva
+        <input type="checkbox" name="adcionais" value="granola">Granola
+        <br>
+        <input type="checkbox" name="adcionais" value="leite condensado">Leite Condensado
+        <input type="checkbox" name="adcionais" value="leite em pó">Leite em Pó
+        <input type="checkbox" name="adcionais" value="finni">Finni Tube
+        <br><br>
 
-</select> <br>
-<input type="checkbox" name="adcionais" value="sim">Creme de Avelã
-<input type="checkbox" name="adcionais" value="sim">Brigadeiro
-<input type="checkbox" name="adcionais" value="sim">Creme de Pistache <br>
-<input type="checkbox" name="adcionais" value="sim">Creme de Paçoca
-<input type="checkbox" name="adcionais" value="sim">Morango
-<input type="checkbox" name="adcionais" value="sim">Uva
-<input type="checkbox" name="adcionais" value="sim">Granola<br>
-<input type="checkbox" name="adcionais" value="sim">Leite Condensado
-<input type="checkbox" name="adcionais" value="sim">Leite em Pó
-<input type="checkbox" name="adcionais" value="sim">Finni Tube
-<br>
-Data de Entrega: <input type="date" name="data de entrega"> <br>
-Observação: <br>
-<textarea name="mensagem" rows="2" cols="50"></textarea><br>
+        Data de Entrega: <input type="date" name="data_entrega"> <br><br>
 
+        Observação: <br>
+        <textarea name="mensagem" rows="2" cols="50"></textarea><br><br>
 
-
-<input type="submit" name="enviar" value="Enviar"> <br>
-  </div>
-    </form> 
-   
-
-      
+        <input type="submit" name="enviar" value="Enviar">
+    </form>
 </body>
-
-
 </html>
-
-
-
-
-
-
-
-
